@@ -59,3 +59,13 @@ python example.py \
     --row_idx 0 \
     --max_new_tokens 1024
 ```
+
+If you find LycheeMemory useful in your research, please consider citing our paper:
+```bash
+@article{chen2026lycheememory,
+  title={Dynamic Long Context Reasoning over Compressed Memory via End-to-End Reinforcement Learning},
+  author={Chen, Zhuoen and Li, Dongfang and Zhang, Meishan and Hu, Baotian and Zhang, Min},
+  journal={arXiv preprint arXiv:2602.08382},
+  year={2026},
+}
+```

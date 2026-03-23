@@ -2,3 +2,6 @@ transformers==4.53.2
 torch
 ninja
 psutil
+pandas
+tensordict==0.6.2
+openai

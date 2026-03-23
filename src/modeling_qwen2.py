@@ -715,7 +715,11 @@ class Qwen2FlashAttention2(Qwen2Attention):
         else:
             # The -q_len: slice assumes left padding.
             attention_mask = attention_mask[:, -query_length:]
-            query_layer, indices_q, cu_seqlens_q, max_seqlen_in_batch_q = unpad_input(query_layer, attention_mask)
+            unpad_out = unpad_input(query_layer, attention_mask)
+            # flash-attn API differs across versions:
+            # - old: (query, indices, cu_seqlens, max_seqlen)
+            # - new: (query, indices, cu_seqlens, max_seqlen, ...)
+            query_layer, indices_q, cu_seqlens_q, max_seqlen_in_batch_q = unpad_out[:4]
 
         return (
             query_layer,
