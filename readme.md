@@ -11,7 +11,7 @@
   </a>
 </p>
 
-> **Note:** Currently, we have released the **inference code and model weights**. The training pipeline (including Compressor pre-training, RL optimization, and Gate training) will be released soon.
+> **Note:** Currently, we have released the **inference code w/o Gate and model weights**. The training pipeline (including Compressor pre-training, RL optimization, and Gate training) will be released soon.
 
 LycheeMemory is a cognitively inspired framework that enables efficient long-context inference via **chunk-wise compression** and **selective memory recall**. By mimicking the division of labor between human long-term memory and dynamic working memory, LycheeMemory achieves multi-hop reasoning over massive contexts (extrapolating up to **1.75M tokens**) while dramatically reducing computational overhead.
 
@@ -20,7 +20,7 @@ LycheeMemory is a cognitively inspired framework that enables efficient long-con
 ## 🌟 Key Features
 
 * **Massive Context Scaling:** Successfully extrapolates context length from 7K to **1.75M tokens** with minimal performance degradation.
-* **Extreme Efficiency:** In long-text processing，Compared to strong baselines like MemAgent, LycheeMemory achieves an average **2× reduction in peak GPU memory** usage and a **6× speedup** during inference, exhibiting near-constant inference latency as context grows.
+* **Efficiency:** In long-text processing，Compared to strong baselines like MemAgent, LycheeMemory achieves an average **2× reduction in peak GPU memory** usage and a **6× speedup** during inference, exhibiting near-constant inference latency as context grows.
 * **Smart Dynamic Recall:** Uses a lightweight LoRA `Gate` to adaptively retrieve relevant memory chunks based on the *evolving working memory*, avoiding premature anchoring and the context fragmentation issues common in standard RAG.
 
 ## 🏗️ Architecture
