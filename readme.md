@@ -1,7 +1,3 @@
-<p align="left">
-  <img src="figs/lychee_logo.png" height="60" alt="Lychee Logo"/>
-</p>
-
 <h1 align="center" style="font-size: 25px;">LycheeMemory: Dynamic Long Context Reasoning over Compressed Memory via End-to-End Reinforcement Learning</h1>
 
 ---
