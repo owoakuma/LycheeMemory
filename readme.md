@@ -11,7 +11,7 @@
   </a>
 </p>
 
-> **Note:** Currently, we have released the **inference code w/o Gate and model weights**. The training pipeline (including Compressor pre-training, RL optimization, and Gate training) will be released soon.
+> **Note:** Currently, we have released the **inference code w/o Gate and model weights**. The training pipeline (including Compressor pre-training, RL optimization, and Gate) will be released soon.
 
 LycheeMemory is a cognitively inspired framework that enables efficient long-context inference via **chunk-wise compression** and **selective memory recall**. By mimicking the division of labor between human long-term memory and dynamic working memory, LycheeMemory achieves multi-hop reasoning over massive contexts (extrapolating up to **1.75M tokens**) while dramatically reducing computational overhead.
 
