@@ -1,0 +1,4 @@
+transformers==4.53.2
+torch
+ninja
+psutil
